@@ -1,1 +1,1 @@
-drmemory.exe -help
+"C:\Program Files (x86)\Dr. Memory\bin\drmemory.exe" ./x64/Debug/TestMemoryLeak.exe -ignore_kernal

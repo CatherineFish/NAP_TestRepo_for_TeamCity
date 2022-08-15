@@ -8,5 +8,6 @@ void func_to_handle_mem_leak()
 int main()
 {
 	func_to_handle_mem_leak();
+	std::cout << "Hello" << std::endl;
 	return 0;
 }

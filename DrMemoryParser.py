@@ -17,4 +17,4 @@ def parse(file_name):
 if __name__ == '__main__':
     if parse('results.txt'):
         #os.system('echo "There are memory leaks in the code."')
-        #os.system('type results.txt')
+        os.system('type results.txt')

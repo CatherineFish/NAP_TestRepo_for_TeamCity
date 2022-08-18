@@ -1,0 +1,14 @@
+# Suppression for Error #1
+LEAK
+name=Error #1 (update to meaningful name)
+drmemorylib.dll!replace_malloc
+TestMemoryLeak.exe!operator new
+TestMemoryLeak.exe!main
+
+## Mod+offs-style suppression for Error #1:
+LEAK
+name=Error #1 (update to meaningful name)
+<drmemorylib.dll+0x28060>
+<TestMemoryLeak.exe+0x2333>
+<TestMemoryLeak.exe+0x1696>
+

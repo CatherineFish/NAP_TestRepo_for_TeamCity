@@ -15,6 +15,6 @@ def parse(file_name):
 
 
 if __name__ == '__main__':
-    if parse('results.txt'):
-        os.system('type results.txt')
+    if parse('restest/results.txt'):
+        os.system('type restest/results.txt')
         raise MemoryError('There are memory leaks in the code.')

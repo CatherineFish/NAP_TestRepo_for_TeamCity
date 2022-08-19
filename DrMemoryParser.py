@@ -19,5 +19,6 @@ if __name__ == '__main__':
         for line in file:
             real_path = re.search("restest\\\\DrMemory-.*\\\\results.txt", line).group()
             if parse(real_path):
-                os.system('echo "There are memory leaks in the code."')
+                os.system('echo There are memory leaks in the code')
                 os.system(f'type {real_path}')
+                os.system(f'copy {real_path} .\\')

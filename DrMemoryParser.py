@@ -15,7 +15,7 @@ def parse(file_name):
 
 
 if __name__ == '__main__':
-    with open('filename.txt') as file:
+    with open('restest\\filename.txt') as file:
         for line in file:
             real_path = re.search("restest\\\\DrMemory-.*\\\\results.txt", line).group()
             if parse(real_path):

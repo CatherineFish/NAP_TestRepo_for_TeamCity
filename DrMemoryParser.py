@@ -5,7 +5,8 @@ import os
 def parse(file_name):
     res_flag = False
     regex = re.compile(r'Error #1:')
-    with open(file_name) as file:
+    print(file_name)
+    with open(r"{}".format(file_name)) as file:
         for line in file:
             match = regex.match(line)
             if match:

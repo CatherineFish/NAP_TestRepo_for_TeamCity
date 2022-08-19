@@ -3,7 +3,8 @@
 void func_to_handle_mem_leak()
 {
 	int* ptr = new int(5);
-	delete ptr;
+	int cnt = ptr[2];
+	
 }
 
 int main()

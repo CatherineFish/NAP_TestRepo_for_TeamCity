@@ -15,6 +15,8 @@ def parse(file_name):
 
 
 if __name__ == '__main__':
-    if parse('.\restest\file_name.txt'):
-        os.system('echo "There are memory leaks in the code."')
-        os.system('type results.txt')
+with open('restest\file_name.txt') as file:
+	for line in file:
+		if parse(line):
+			os.system('echo "There are memory leaks in the code."')
+			os.system(f'type {line}')

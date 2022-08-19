@@ -264,3 +264,6 @@ __pycache__/
 /!SYMBOLS.7z
 /DrMemoryResult
 /results.txt
+/copy.cmd
+/restest/results.txt
+/restest

@@ -13,6 +13,10 @@ def parse(file_name):
 
 
 if __name__ == '__main__':
-    if parse("results.txt"):
-        os.system('echo There are memory leaks in the code')  # keyword for an error in teamcity
-        os.system(f'type results.txt')  # dr memory log to log
+    with open('filename.txt') as file:
+        for line in file:
+            real_path = re.search("restest\\\\DrMemory-.*\\\\results.txt", line).group()  # making a relative path
+            if parse(real_path):
+                os.system('echo There are memory leaks in the code')  # keyword for an error in teamcity
+                os.system(f'type {real_path}')  # dr memory log to log
+                os.system(f'copy {real_path} .\\')  # for publication in artifacts
